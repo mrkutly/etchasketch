@@ -4,13 +4,33 @@ for(i = 0; i < 256; i++){
     document.getElementById("container").appendChild(div);
   };
   div.setAttribute("id",i + 1);
-  div.style.cssText = "padding: 20px";
+  div.setAttribute("class", "square");
+  div.style.cssText = "margin: 1px; padding: 20px";
+  div.style.backgroundColor = "blue";
   div.style.cssFloat = "left";
   if((i-1) % 16 == 0){
     document.getElementById(i).style.clear = "left";
-  }
+  };
   appendDiv(div);
 };
+
+document.addEventListener("mouseover", function(){
+  document.querySelector(".square").setAttribute("class", "white");
+  document.getElementsByClassName(".white").style.backgroundColor = "white";
+});
+
+// giving uncaught type error "cannot set property backgroundColor of undefined" for js19
+
+// EXAMPLE document.getElementById("myDiv").style.backgroundColor = "lightblue";
+
+
+
+
+
+
+
+
+
 
 
 
