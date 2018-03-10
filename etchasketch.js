@@ -4,7 +4,7 @@ for(i = 0; i < 256; i++){
     document.getElementById("container").appendChild(div);
   };
   div.setAttribute("id",i + 1);
-  div.setAttribute("class", "square");
+  div.setAttribute("class", "blue");
   div.style.cssText = "margin: 1px; padding: 20px";
   div.style.cssFloat = "left";
   if((i-1) % 16 == 0){
@@ -13,9 +13,14 @@ for(i = 0; i < 256; i++){
   appendDiv(div);
 }
 
-document.addEventListener("mouseover", function(){
-  document.querySelector(".square").setAttribute("class", "white");
+
+document.addEventListener("mouseover", function(event) {
+  document.getElementById(event.target.id).setAttribute("class", "white");  
 });
+
+//document.addEventListener("mouseover", function(){
+//  document.getElementById("").setAttribute("class", "white");
+//});
 
 // giving uncaught type error "cannot set property backgroundColor of undefined" for js19
 
