@@ -15,16 +15,8 @@ for(i = 0; i < 256; i++){
 
 
 document.addEventListener("mouseover", function(event) {
-  document.getElementById(event.target.id).setAttribute("class", "white");  
+  document.getElementById(event.target.id).setAttribute("class", "white");
 });
-
-//document.addEventListener("mouseover", function(){
-//  document.getElementById("").setAttribute("class", "white");
-//});
-
-// giving uncaught type error "cannot set property backgroundColor of undefined" for js19
-
-// EXAMPLE document.getElementById("myDiv").style.backgroundColor = "lightblue";
 
 
 
