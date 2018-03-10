@@ -12,12 +12,11 @@ for(i = 0; i < 256; i++){
     document.getElementById(i).style.clear = "left";
   };
   appendDiv(div);
-};
+}
 
 document.addEventListener("mouseover", function(){
   document.querySelector(".square").setAttribute("class", "white");
-  document.getElementsByClassName(".white").style.backgroundColor = "white";
-});
+}
 
 // giving uncaught type error "cannot set property backgroundColor of undefined" for js19
 
