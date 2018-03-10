@@ -16,7 +16,7 @@ for(i = 0; i < 256; i++){
 
 document.addEventListener("mouseover", function(){
   document.querySelector(".square").setAttribute("class", "white");
-}
+});
 
 // giving uncaught type error "cannot set property backgroundColor of undefined" for js19
 
