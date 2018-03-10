@@ -6,7 +6,6 @@ for(i = 0; i < 256; i++){
   div.setAttribute("id",i + 1);
   div.setAttribute("class", "square");
   div.style.cssText = "margin: 1px; padding: 20px";
-  div.style.backgroundColor = "blue";
   div.style.cssFloat = "left";
   if((i-1) % 16 == 0){
     document.getElementById(i).style.clear = "left";
@@ -21,13 +20,6 @@ document.addEventListener("mouseover", function(){
 // giving uncaught type error "cannot set property backgroundColor of undefined" for js19
 
 // EXAMPLE document.getElementById("myDiv").style.backgroundColor = "lightblue";
-
-
-
-
-
-
-
 
 
 
