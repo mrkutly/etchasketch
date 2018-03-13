@@ -11,12 +11,12 @@ for(i = 0; i < 256; i++){
     document.getElementById(i).style.clear = "left";
   };
   appendDiv(div);
+  
+  var blue = document.getElementById(i+1);
+  blue.addEventListener("mouseover", function(event) {
+    document.getElementById(event.target.id).setAttribute("class", "white");
+  });
 }
-
-
-document.addEventListener("mouseover", function(event) {
-  document.getElementById(event.target.id).setAttribute("class", "white");
-});
 
 
 
